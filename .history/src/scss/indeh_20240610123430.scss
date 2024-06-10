@@ -1,46 +1,36 @@
-/* Добавление шрифта */
 @font-face {
-  font-family: "TT Lakes Regular";
-  src: url(fonts/TTLakes/Regular/TTLakes-Regular.eot);
-  src: url(fonts/TTLakes/Regular/TTLakes-Regular.eot?#iefix)
-      format("embedded-opentype"),
-    url(fonts/TTLakes/Regular/TTLakes-Regular.woff) format("woff"),
-    url(fonts/TTLakes/Regular/TTLakes-Regular.ttf) format("truetype");
+  font-family: 'TT Lakes Regular';
+  src: url(../fonts/TTLakes-Regular.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "TT Lakes Bold";
-  src: url(fonts/TTLakes/Bold/TTLakes-Bold.eot);
-  src: url(fonts/TTLakes/Bold/TTLakes-Bold.eot?#iefix)
-      format("embedded-opentype"),
-    url(fonts/TTLakes/Bold/TTLakes-Bold.woff) format("woff"),
-    url(fonts/TTLakes/Bold/TTLakes-Bold.ttf) format("truetype");
+  font-family: 'TT Lakes Bold';
+  src: url(../fonts/TTLakes-Bold.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "TT Lakes Medium";
-  src: url(fonts/TTLakes/Medium/TTLakes-Medium.eot);
-  src: url(fonts/TTLakes/Medium/TTLakes-Medium.eot?#iefix)
-      format("embedded-opentype"),
-    url(fonts/TTLakes/Medium/TTLakes-Medium.woff) format("woff"),
-    url(fonts/TTLakes/Medium/TTLakes-Medium.ttf) format("truetype");
+  font-family: 'TT Lakes Medium';
+  src: url(../fonts/TTLakes-Medium.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 html {
   box-sizing: border-box;
-  font-family: "TT Lakes Regular", Times, serif;
+  font-family: 'TT Lakes Regular', Times, serif;
 }
 
-*,
-*:before,
-*:after {
+* {
   box-sizing: inherit;
+
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
 }
 
 body,
@@ -91,13 +81,19 @@ svg {
   border-radius: 50%;
 }
 
-.upper-menu__left > .icon--header:last-child {
-  width: 98px;
-  height: 52px;
-  background-color: transparent;
+.upper-menu__left > .icon--header {
+  &:last-child {
+    width: 98px;
+    height: 52px;
+    background-color: transparent;
+  }
+
+  &:first-child {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
 }
 
-.upper-menu__left > .icon--header:first-child,
 .upper-menu__right > .icon--header {
   margin-top: 6px;
   margin-bottom: 6px;
@@ -110,7 +106,7 @@ svg {
 
 .upper-menu__left > .icon--header:nth-child(2)::before,
 .upper-menu__right > .icon--header:nth-child(4)::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 4px;
   left: -20px;
@@ -143,20 +139,20 @@ svg {
 }
 
 .title__heading {
-  font-family: "TT Lakes Bold";
+  font-family: 'TT Lakes Bold';
   font-size: 28px;
   color: #1b1c21;
-}
 
-.title__heading:before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: -4px;
-  width: 8px;
-  height: 40px;
-  border-radius: 10px;
-  background-color: #41f6d7;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -4px;
+    width: 8px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #41f6d7;
+  }
 }
 
 .bookmark-menu {
@@ -165,7 +161,7 @@ svg {
 }
 
 .bookmark-menu__bookmark {
-  font-family: "TT Lakes Regular", Times, serif;
+  font-family: 'TT Lakes Regular', Times, serif;
   vertical-align: middle;
   padding-left: 1em;
   padding-right: 1em;
@@ -196,13 +192,17 @@ svg {
 }
 
 .description__toggler-text {
-  font-family: "TT Lakes Medium";
+  font-family: 'TT Lakes Medium';
   display: flex;
   line-height: 24px;
+
+  &:before {
+    content: url('../img/ic-expand.svg');
+  }
 }
 
-.description__toggler-text:before {
-  content: url("ic/expand.svg");
+#burger {
+  background-image: url('../img/ic-burger.svg') no-repeat;
 }
 
 /* CSS ТЕЛЕФОНЫ */
@@ -212,12 +212,18 @@ svg {
     height: 88px;
   }
 
-.upper-menu__left,
-.upper-menu__right {
-  gap: 16px;
-}
+  .upper-menu__left {
+    gap: 16px;
+  }
 
-  .upper-menu__right > .icon--header:nth-child(-n + 3),
+  .upper-menu__right {
+    gap: 16px;
+
+    > .icon--header:nth-child(-n + 3) {
+      display: none;
+    }
+  }
+
   .upper-menu__left > .icon--header:last-child::before,
   .title__icon-text {
     display: none;
@@ -278,13 +284,13 @@ svg {
     height: 88px;
   }
 
-.upper-menu__left,
-.upper-menu__right {
-  gap: 16px;
-}
+  .upper-menu__left,
+  .upper-menu__right {
+    gap: 16px;
+  }
 
-.upper-menu__left > .icon--header:nth-child(2),  
-.upper-menu__right > .icon--header:nth-child(4) {
+  .upper-menu__left > .icon--header:nth-child(2),
+  .upper-menu__right > .icon--header:nth-child(4) {
     margin-left: 24px;
   }
 
