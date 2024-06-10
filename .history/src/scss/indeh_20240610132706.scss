@@ -4,6 +4,10 @@ $purple-color: #ff3e79;
 
 html {
   box-sizing: border-box;
+}
+
+html,
+div {
   font-family: 'TT Lakes Regular', Times, serif;
 }
 
@@ -151,7 +155,7 @@ svg {
 }
 
 .title__heading {
-  font-family: 'TT Lakes Bold';
+  font-family: 'TT Lakes Bold', Times, serif;
   font-size: 28px;
   color: #1b1c21;
 
@@ -173,7 +177,6 @@ svg {
 }
 
 .bookmark-menu__bookmark {
-  font-family: 'TT Lakes Regular', Times, serif;
   vertical-align: middle;
   padding-left: 1em;
   padding-right: 1em;
@@ -204,7 +207,7 @@ svg {
 }
 
 .description__toggler-text {
-  font-family: 'TT Lakes Medium';
+  font-family: 'TT Lakes Medium', Times, serif;
   display: flex;
   line-height: 24px;
 

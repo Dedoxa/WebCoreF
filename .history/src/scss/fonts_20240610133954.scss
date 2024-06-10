@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('TTLakes-Regular.eot');
+  src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+    url('TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('TTLakes-Regular.woff') format('woff'),
+    url('TTLakes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes Bold';
+  src: url(https://github.com/Dedoxa/WebCoreF/tree/main/src/fonts/TTLakes-Bold.eot);
+  src: url(https://github.com/Dedoxa/WebCoreF/tree/main/src/fonts/TTLakes-Bold.eot?#iefix)
+      format('embedded-opentype'),
+    url(https://github.com/Dedoxa/WebCoreF/tree/main/src/fonts/TTLakes-Bold.woff)
+      format('woff'),
+    url(https://github.com/Dedoxa/WebCoreF/tree/main/src/fonts/TTLakes-Bold.ttf)
+      format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes Medium';
+  src: url(https://github.com/Dedoxa/WebCoreF/tree/main/src/fonts/TTLakes-Medium.eot);
+  src: url(https://github.com/Dedoxa/WebCoreF/tree/main/src/fonts/TTLakes-Medium.eot?#iefix)
+      format('embedded-opentype'),
+    url(https://github.com/Dedoxa/WebCoreF/tree/main/src/fonts/TTLakes-Medium.woff)
+      format('woff'),
+    url(https://github.com/Dedoxa/WebCoreF/tree/main/src/fonts/TTLakes-Medium.ttf)
+      format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

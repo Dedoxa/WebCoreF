@@ -1,5 +1,3 @@
-import { Navigation, Pagination } from 'swiper/modules'
-Swiper.use([Navigation, Pagination])
 import Swiper from 'swiper'
 
 const swiper = new Swiper('.swiper', {

@@ -1,7 +1,3 @@
-import { Navigation, Pagination } from 'swiper/modules'
-Swiper.use([Navigation, Pagination])
-import Swiper from 'swiper'
-
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
@@ -12,6 +8,7 @@ const swiper = new Swiper('.swiper', {
 })
 
 const BRANDS_CONTAINER = document.querySelector('.window__brands')
+const TOGGLER_AREA = document.querySelector('.toggler-showHide')
 const TOGGLER = document.querySelector('.toggler-showHide')
 
 function expandContainer(element) {
@@ -29,5 +26,6 @@ function expandContainer(element) {
 }
 
 expandContainer(TOGGLER)
+expandContainer(ARROW)
 
 console.log('Брэнды подключились')
