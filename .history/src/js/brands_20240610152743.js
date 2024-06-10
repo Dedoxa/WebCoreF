@@ -4,16 +4,11 @@ import Swiper from 'swiper'
 
 const swiper = new Swiper('.swiper', {
   breakpoints: {
-    320: {
-      enabled: true
-    },
-    768: {
-      enabled: false
-    }
-  },
+    
+  }
 
   direction: 'horizontal',
-  loop: false,
+  loop: true,
 
   pagination: {
     el: '.swiper-pagination'

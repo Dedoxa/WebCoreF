@@ -13,7 +13,7 @@ const swiper = new Swiper('.swiper', {
   },
 
   direction: 'horizontal',
-  loop: false,
+  loop: true,
 
   pagination: {
     el: '.swiper-pagination'

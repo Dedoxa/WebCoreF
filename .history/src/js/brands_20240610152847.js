@@ -8,12 +8,12 @@ const swiper = new Swiper('.swiper', {
       enabled: true
     },
     768: {
-      enabled: false
-    }
-  },
+
+    },
+  }
 
   direction: 'horizontal',
-  loop: false,
+  loop: true,
 
   pagination: {
     el: '.swiper-pagination'
