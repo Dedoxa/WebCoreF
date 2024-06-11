@@ -1,0 +1,62 @@
+.window {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+}
+
+.window__heading {
+  &::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #d9fff5;
+  }
+
+  height: 80px;
+  vertical-align: middle;
+  font-family: 'TT Lakes Medium', Times, serif;
+  background-image: linear-gradient(to right, #ffffff00, #fff);
+}
+
+.window__content-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.window__wrapper-heading {
+  //вложенность в див
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #7e7e82;
+}
+
+.window__wrapper-toggler {
+  //вложенность в див
+  display: flex;
+  padding-top: 0;
+  padding-right: 0;
+}
+
+.window__brands-swiper {
+  &::after {
+    z-index: 2;
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 24px;
+    height: 72px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), #fff);
+  }
+
+  &::before {
+    z-index: 2;
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 24px;
+    height: 72px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), #fff);
+  }
+}

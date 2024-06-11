@@ -1,0 +1,45 @@
+.main {
+  background-color: #f8f8f8;
+  position: relative;
+  width: auto;
+
+  @media (min-width: 321px) {
+    .main__image-phone,
+    .main__image-tablet,
+    .main__image-desktop {
+      border-radius: 5px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .main {
+      min-width: 320px;
+      height: 509px;
+    }
+
+    .main__general-wrapper {
+      padding-top: 24px;
+      padding-left: 16px;
+    }
+
+    .main__title-wrapper {
+      margin-bottom: 24px;
+    }
+
+    .main__page-content {
+      padding-top: 24px;
+      padding-right: 16px;
+    }
+
+    .main__image-tablet,
+    .main__image-desktop {
+      display: none;
+    }
+
+    .main__image-phone {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

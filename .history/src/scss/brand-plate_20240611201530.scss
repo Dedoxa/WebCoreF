@@ -1,0 +1,52 @@
+.brand-plate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 240px;
+  height: 72px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #eaeaea;
+  transition: background-color 0.1s linear;
+
+  &:hover {
+    background-color: #00000014;
+    transition: background-color 0.1s linear;
+  }
+}
+
+.brand-plate__logo {
+  margin-left: 16px;
+}
+
+.brand-plate__dropdown {
+  content: url('../img/ic-dropdown.svg');
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
+
+/* CSS ТЕЛЕФОНЫ */
+@media (max-width: 543px) {
+  .brand-plate {
+    margin: auto;
+    min-width: 190px;
+    width: 80%;
+  }
+}
+
+/* ПЛАНШЕТЫ */
+@media (min-width: 544px) and (max-width: 1119px) {
+  div .brand-plate {
+    width: 224px;
+  }
+}
+
+/* CSS ДЕСКТОПЫ */
+@media (min-width: 1120px) {
+  div .brand-plate {
+    width: 240px;
+  }
+}

@@ -1,0 +1,17 @@
+.upper-menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d9fff5;
+  width: auto;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-right: 16px;
+  padding-left: 16px;
+
+  .upper-menu__left,
+  .upper-menu__right {
+    display: flex;
+    flex: 0 1 auto;
+  }
+}

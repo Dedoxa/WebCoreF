@@ -1,0 +1,13 @@
+.block {
+  color: red;
+
+  .block__element {
+    padding: 5px;
+
+    &:hover {
+    }
+
+    @media all {
+    }
+  }
+}

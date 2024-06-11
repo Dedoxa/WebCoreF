@@ -11,11 +11,13 @@ const swiper = new Swiper('.swiper', {
     },
     768: {
       enabled: false,
+      slidesPerView: 'all',
       loop: false,
       spaceBetween: 24
     },
     1120: {
       enabled: false,
+      slidesPerView: 20,
       loop: false,
       spaceBetween: 32
     }
@@ -46,3 +48,5 @@ function expandContainer(element) {
 }
 
 expandContainer(TOGGLER)
+
+console.log('Брэнды подключились')

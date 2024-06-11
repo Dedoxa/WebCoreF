@@ -1,0 +1,41 @@
+.bookmark-menu {
+  display: flex;
+  overflow: scroll;
+
+  .bookmark-menu__bookmark {
+    vertical-align: middle;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #7e7e82;
+    white-space: nowrap;
+    border: none;
+    background-color: transparent;
+  }
+
+  .bookmark-menu__bookmark--focus {
+    background-color: #ffffff;
+    border: 2px solid #b8ffec;
+  }
+
+  .bookmark-menu__right-fade-effect {
+    position: absolute;
+    right: 0px;
+    width: 24px;
+    height: 40px;
+    background: linear-gradient(
+      to right,
+      rgba(248, 248, 248, 0),
+      rgba(248, 248, 248, 1)
+    );
+  }
+
+  @media (min-width: 1120px) {
+    .bookmark-menu {
+      display: block;
+      overflow: auto;
+    }
+  }
+}

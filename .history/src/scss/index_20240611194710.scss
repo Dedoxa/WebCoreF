@@ -1,0 +1,161 @@
+@import url('./upper-menu.scss');
+@import url('./main.scss');
+@import url('./icon.scss');
+@import url('./title.scss');
+@import url('./description.scss');
+
+$purple-color: #ff3e79;
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+div {
+  font-family: 'TT Lakes Regular', Times, serif;
+}
+
+* {
+  box-sizing: inherit;
+
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+body,
+html,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bookmark-menu {
+  display: flex;
+  overflow: scroll;
+}
+
+.bookmark-menu__bookmark {
+  vertical-align: middle;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #7e7e82;
+  white-space: nowrap;
+  border: none;
+  background-color: transparent;
+}
+
+.bookmark-menu__bookmark--focus {
+  background-color: #ffffff;
+  border: 2px solid #b8ffec;
+}
+
+.bookmark-menu__right-fade-effect {
+  position: absolute;
+  right: 0px;
+  width: 24px;
+  height: 40px;
+  background: linear-gradient(
+    to right,
+    rgba(248, 248, 248, 0),
+    rgba(248, 248, 248, 1)
+  );
+}
+
+/* CSS ТЕЛЕФОНЫ */
+@media (max-width: 767px) {
+  .description__toggler-text {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .description__text {
+    height: 90px;
+    line-height: 18px;
+  }
+}
+
+/* CSS ПЛАНШЕТЫ */
+@media (min-width: 768px) and (max-width: 1119px) {
+  .description {
+    height: 208px;
+    padding-right: 48px;
+  }
+
+  .description__toggler-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .description__text {
+    min-width: 312px;
+    max-height: 160px;
+    line-height: 20px;
+  }
+}
+
+/* CSS ДЕСКТОПЫ */
+@media (min-width: 1120px) {
+  .title {
+    justify-content: space-between;
+  }
+
+  .title__right-area {
+    display: flex;
+    gap: 32px;
+  }
+
+  .title__icon-area {
+    display: flex;
+  }
+
+  .icon--title {
+    display: block;
+  }
+
+  .title__icon-text {
+    display: inline;
+    font-weight: 600;
+    margin-right: 8px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .bookmark-menu {
+    display: block;
+    overflow: auto;
+  }
+
+  .description {
+    padding-right: 36px;
+  }
+
+  .description__toggler-text {
+    margin-top: 13.78px;
+    margin-bottom: 13.78px;
+  }
+
+  .description__text {
+    min-width: 490px;
+    max-height: 160px;
+    line-height: 20px;
+  }
+}

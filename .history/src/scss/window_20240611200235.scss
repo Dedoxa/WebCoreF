@@ -1,0 +1,24 @@
+.window {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+}
+
+.window__heading {
+  &::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #d9fff5;
+  }
+
+  height: 80px;
+  vertical-align: middle;
+  font-family: 'TT Lakes Medium', Times, serif;
+  background-image: linear-gradient(to right, #ffffff00, #fff);
+}
+
+.window__content-area {
+  display: flex;
+  flex-direction: column;
+}

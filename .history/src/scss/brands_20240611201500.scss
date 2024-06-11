@@ -1,6 +1,5 @@
 @import url('./window.scss');
 @import url('./swiper.scss');
-@import url('./brand-plate.scss');
 
 html {
   box-sizing: border-box;
@@ -47,6 +46,29 @@ svg {
 
 label > span {
   transition: all linear 0.2s;
+}
+
+/* CSS ТЕЛЕФОНЫ */
+@media (max-width: 543px) {
+  .brand-plate {
+    margin: auto;
+    min-width: 190px;
+    width: 80%;
+  }
+}
+
+/* ПЛАНШЕТЫ */
+@media (min-width: 544px) and (max-width: 1119px) {
+  div .brand-plate {
+    width: 224px;
+  }
+}
+
+/* CSS ДЕСКТОПЫ */
+@media (min-width: 1120px) {
+  div .brand-plate {
+    width: 240px;
+  }
 }
 
 /* Служебные классы */

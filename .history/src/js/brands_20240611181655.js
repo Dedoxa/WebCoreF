@@ -5,23 +5,15 @@ import Swiper from 'swiper'
 const swiper = new Swiper('.swiper', {
   breakpoints: {
     320: {
-      enabled: true,
-      loop: true,
-      spaceBetween: 16
+      enabled: true
     },
     768: {
-      enabled: false,
-      loop: false,
-      spaceBetween: 24
-    },
-    1120: {
-      enabled: false,
-      loop: false,
-      spaceBetween: 32
+      enabled: true
     }
   },
 
   direction: 'horizontal',
+  loop: true,
 
   pagination: {
     el: '.swiper-pagination'
@@ -46,3 +38,5 @@ function expandContainer(element) {
 }
 
 expandContainer(TOGGLER)
+
+console.log('Брэнды подключились')

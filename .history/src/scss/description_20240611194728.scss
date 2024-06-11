@@ -1,0 +1,28 @@
+.description__text {
+  font-size: 14px;
+  color: #1b1c21;
+  overflow: hidden;
+  font-weight: 500;
+
+  .description__toggler-text {
+    font-family: 'TT Lakes Medium', Times, serif;
+    display: flex;
+    line-height: 24px;
+
+    &:before {
+      content: url('../img/ic-expand.svg');
+    }
+  }
+
+  @media (max-width: 767px) {
+    .description__toggler-text {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+
+    .description__text {
+      height: 90px;
+      line-height: 18px;
+    }
+  }
+}

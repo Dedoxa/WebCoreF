@@ -1,0 +1,37 @@
+.icon {
+  flex: 0 0 auto;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: #ff3e79;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+#burger {
+  background-image: url('../img/ic-burger.svg');
+}
+
+#logo {
+  background-color: transparent;
+  border-radius: 0;
+  background-image: url('../img/ic-CPSLogo.svg');
+}
+
+#call {
+  background-image: url('../img/ic-call.svg');
+}
+
+#chat {
+  background-image: url('../img/ic-chat.svg');
+}
+#profile {
+  background-image: url('../img/ic-profile.svg');
+}
+#repair {
+  background-image: url('../img/ic-repair.svg');
+}
+#checkStatus {
+  background-image: url('../img/ic-checkstatus.svg');
+}

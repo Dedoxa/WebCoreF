@@ -1,0 +1,19 @@
+.swiper {
+  height: 116px;
+}
+
+.swiper-slide {
+  justify-content: center;
+}
+
+.swiper-pagination {
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #dddddd;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #b5b6bc;
+  }
+}

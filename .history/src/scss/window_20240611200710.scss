@@ -1,0 +1,82 @@
+.window {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+
+  .window__heading {
+    &::before {
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: #d9fff5;
+    }
+
+    height: 80px;
+    vertical-align: middle;
+    font-family: 'TT Lakes Medium', Times, serif;
+    background-image: linear-gradient(to right, #ffffff00, #fff);
+  }
+
+  .window__content-area {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .window__brands {
+    display: inline-flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .window__brands-swiper {
+    &::after {
+      z-index: 2;
+      content: '';
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      width: 24px;
+      height: 72px;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0), #fff);
+    }
+
+    &::before {
+      z-index: 2;
+      content: '';
+      position: absolute;
+      left: 0px;
+      width: 24px;
+      height: 72px;
+      background: linear-gradient(to left, rgba(0, 0, 0, 0), #fff);
+    }
+  }
+
+  .window__wrapper-heading {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #7e7e82;
+  }
+
+  .window__wrapper-toggler {
+    display: flex;
+    padding-top: 0;
+    padding-right: 0;
+  }
+
+  @media (max-width: 543px) {
+    .window__wrapper-brands {
+      padding-top: 16px;
+    }
+
+    .window__swiper-container {
+      padding: 16px;
+    }
+
+    .window__toggler-area {
+      display: none;
+    }
+  }
+}
