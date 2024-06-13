@@ -30,7 +30,7 @@
     overflow: hidden;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 543px) {
     .window__brands-swiper {
       &::after {
         z-index: 2;
@@ -68,7 +68,7 @@
     padding-right: 0;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 543px) {
     .window__wrapper-brands {
       padding-top: 16px;
     }
@@ -82,7 +82,7 @@
     }
   }
 
-  @media (min-width: 768px) and (max-width: 1119px) {
+  @media (min-width: 544px) and (max-width: 1119px) {
     .window__wrapper {
       padding: 24px;
     }
