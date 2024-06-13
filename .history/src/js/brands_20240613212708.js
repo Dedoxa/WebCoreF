@@ -26,10 +26,10 @@ const swiper = new Swiper('.swiper', {
   }
 })
 
-const BRANDS_CONTAINER = document.querySelector('.plates__brands-swiper')
+const BRANDS_CONTAINER = document.querySelector('.window__brands-swiper')
 const TOGGLER = document.querySelector('.plates__toggler')
 
-function expandContainer(element) {
+function expandContainer(element, container) {
   element.addEventListener('click', function () {
     if (TOGGLER.textContent === 'Показать всё') {
       BRANDS_CONTAINER.classList.add('jsExpand')

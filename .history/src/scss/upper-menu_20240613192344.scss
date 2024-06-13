@@ -1,0 +1,27 @@
+.upper-menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d9fff5;
+  min-width: 320px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-right: 16px;
+  padding-left: 16px;
+
+  @media (min-width: 1120px) {
+    display: none;
+  }
+
+  .upper-menu__left {
+    display: flex;
+    flex: 0 1 auto;
+    gap: 16px;
+  }
+
+  .upper-menu__right {
+    display: flex;
+    flex: 0 1 auto;
+    gap: 16px;
+  }
+}

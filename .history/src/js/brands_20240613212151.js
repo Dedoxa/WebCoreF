@@ -26,8 +26,8 @@ const swiper = new Swiper('.swiper', {
   }
 })
 
-const BRANDS_CONTAINER = document.querySelector('.plates__brands-swiper')
-const TOGGLER = document.querySelector('.plates__toggler')
+const BRANDS_CONTAINER = document.querySelector('.window__brands-swiper')
+const TOGGLER = document.querySelector('.toggler-showHide')
 
 function expandContainer(element) {
   element.addEventListener('click', function () {
