@@ -21,12 +21,14 @@ const swiper = new Swiper('.swiper', {
     }
   },
 
+  direction: 'horizontal',
+
   pagination: {
     el: '.swiper-pagination'
   }
 })
 
-const BRANDS_CONTAINER = document.querySelector('.window__brands-swiper')
+const BRANDS_CONTAINER = document.querySelector('.window__brands')
 const TOGGLER = document.querySelector('.toggler-showHide')
 
 function expandContainer(element) {

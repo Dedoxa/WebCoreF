@@ -21,6 +21,8 @@ const swiper = new Swiper('.swiper', {
     }
   },
 
+  direction: 'horizontal',
+
   pagination: {
     el: '.swiper-pagination'
   }

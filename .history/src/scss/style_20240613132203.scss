@@ -14,3 +14,9 @@
 @import url('./swiper.scss');
 @import url('./brand-plate.scss');
 @import url('./toggler-showHide.scss');
+
+/* Служебные классы */
+
+.js__expand {
+  height: max-content;
+}

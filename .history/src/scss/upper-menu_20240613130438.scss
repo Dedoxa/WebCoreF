@@ -73,7 +73,7 @@
     }
   }
 
-  @media (min-width: 768px) and (max-width: 1119px) {
+  @media (min-width: 768px) {
     .upper-menu__left,
     .upper-menu__right {
       gap: 16px;
@@ -82,6 +82,13 @@
     .upper-menu__left > .icon--header:nth-child(2),
     .upper-menu__right > .icon--header:nth-child(4) {
       margin-left: 24px;
+    }
+  }
+
+  @media (min-width: 1120px) {
+    .upper-menu,
+    .bookmark-menu__right-fade-effect {
+      display: none;
     }
   }
 }

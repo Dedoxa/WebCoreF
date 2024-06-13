@@ -49,6 +49,13 @@ label > span {
   transition: all linear 0.2s;
 }
 
+@media (min-width: 1120px) {
+  .upper-menu,
+  .bookmark-menu__right-fade-effect {
+    display: none;
+  }
+}
+
 /* Служебные классы */
 
 .js__expand {

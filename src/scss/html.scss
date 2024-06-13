@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+  font-family: 'TT Lakes Regular', Times, serif;
+
+  body,
+  h1,
+  h2,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  * {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+
+    &:before,
+    &:after {
+      box-sizing: inherit;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  label > span {
+    transition: all linear 0.2s;
+  }
+
+  @media (min-width: 1120px) {
+    .upper-menu,
+    .bookmark-menu__right-fade-effect {
+      display: none;
+    }
+  }
+}
