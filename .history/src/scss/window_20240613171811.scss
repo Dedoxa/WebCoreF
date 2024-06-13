@@ -28,26 +28,6 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     overflow: hidden;
-
-    @media (min-width: 768px) {
-      height: 170px;
-      row-gap: 16px;
-      column-gap: 24px;
-    }
-
-    @media (min-width: 1120px) {
-      column-gap: 32px;
-    }
-  }
-
-  .window__wrapper {
-    @media (min-width: 768px) {
-      padding: 24px;
-    }
-
-    @media (min-width: 1120px) {
-      padding: 32px;
-    }
   }
 
   .window__wrapper-heading {
@@ -65,47 +45,64 @@
 
   .window__swiper-container {
     padding: 16px;
-
-    @media (min-width: 768px) {
-      padding: 0;
-    }
   }
 
   .window__toggler-area {
     display: none;
+  }
 
-    @media (min-width: 768px) {
-      display: block;
+  @media (max-width: 767px) {
+    .window__brands-swiper {
+      &::after {
+        z-index: 2;
+        content: '';
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 24px;
+        height: 72px;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0), #fff);
+      }
+
+      &::before {
+        z-index: 2;
+        content: '';
+        position: absolute;
+        left: 0px;
+        width: 24px;
+        height: 72px;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0), #fff);
+      }
     }
   }
 
-  .window__brands-swiper {
-    &::after {
-      z-index: 2;
-      content: '';
-      position: absolute;
-      right: 0px;
-      top: 0px;
-      width: 24px;
-      height: 72px;
-      background: linear-gradient(to right, rgba(0, 0, 0, 0), #fff);
+  @media (min-width: 768px) {
+    .window__swiper-container {
+      padding: 0;
     }
 
-    &::before {
-      z-index: 2;
-      content: '';
-      position: absolute;
-      left: 0px;
-      width: 24px;
-      height: 72px;
-      background: linear-gradient(to left, rgba(0, 0, 0, 0), #fff);
+    .window__toggler-area {
+      display: block;
     }
 
-    @media (min-width: 768px) {
-      &::after,
-      &::before {
-        display: none;
-      }
+    .window__wrapper {
+      padding: 24px;
+    }
+
+    .window__brands {
+      height: 170px;
+      row-gap: 16px;
+      column-gap: 24px;
+    }
+  }
+
+  @media (min-width: 1120px) {
+    .window__wrapper {
+      padding: 32px;
+    }
+
+    .window__brands {
+      column-gap: 32px;
     }
   }
 }

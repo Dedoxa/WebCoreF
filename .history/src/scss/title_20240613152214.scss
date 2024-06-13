@@ -1,21 +1,18 @@
 .title {
   display: flex;
   justify-content: space-between;
+  display: none;
 
-  .title__icon-text {
-    display: none;
-
-    @media (min-width: 1120px) {
+  @media (min-width: 1120px) {
+    .title__icon-text {
       display: inline;
       font-weight: 600;
       margin-right: 8px;
       margin-top: auto;
       margin-bottom: auto;
     }
-  }
 
-  .title__heading {
-    @media (min-width: 1120px) {
+    .title__heading {
       font-family: 'TT Lakes Bold', Times, serif;
       font-size: 28px;
       color: #1b1c21;
@@ -31,17 +28,13 @@
         background-color: #41f6d7;
       }
     }
-  }
 
-  .title__right-area {
-    @media (min-width: 1120px) {
+    .title__right-area {
       display: flex;
       gap: 32px;
     }
-  }
 
-  .title__icon-area {
-    @media (min-width: 1120px) {
+    .title__icon-area {
       display: flex;
     }
   }

@@ -37,11 +37,6 @@
   display: flex;
   overflow: scroll;
 
-  @media (min-width: 1120px) {
-    display: block;
-    overflow: auto;
-  }
-
   .bookmark-menu__bookmark {
     vertical-align: middle;
     padding-left: 1em;
@@ -70,5 +65,10 @@
       rgba(248, 248, 248, 0),
       rgba(248, 248, 248, 1)
     );
+  }
+
+  @media (min-width: 1120px) {
+    display: block;
+    overflow: auto;
   }
 }

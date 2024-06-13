@@ -27,18 +27,18 @@
 
         @media (min-width: 768px) {
           margin-left: 24px;
+        }
 
-          &::before {
-            content: '';
-            position: absolute;
-            top: 10px;
-            left: -20px;
-            display: block;
-            border-radius: 5px;
-            width: 2px;
-            height: 32px;
-            background-color: #eaeaea;
-          }
+        &::before {
+          content: '';
+          position: absolute;
+          top: 10px;
+          left: -20px;
+          display: block;
+          border-radius: 5px;
+          width: 2px;
+          height: 32px;
+          background-color: #eaeaea;
         }
       }
     }
@@ -57,7 +57,7 @@
         display: none;
 
         @media (min-width: 768px) {
-          display: block;
+          display: ;
         }
       }
 
@@ -78,6 +78,15 @@
           background-color: #eaeaea;
         }
       }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .upper-menu__right > .icon--header:nth-child(-n + 3) {
+    }
+
+    .upper-menu__left > .icon--header:last-child::before {
+      display: none;
     }
   }
 }

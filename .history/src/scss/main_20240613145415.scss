@@ -1,0 +1,135 @@
+.main {
+  background-color: #f8f8f8;
+  position: relative;
+  width: auto;
+  min-width: 320px;
+  height: 509px;
+
+  .main__general-wrapper {
+    padding-top: 24px;
+    padding-left: 16px;
+
+    @media (min-width: 768px) {
+    }
+
+    @media (min-width: 1120px) {
+    }
+  }
+
+  .main__title-wrapper {
+    margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+    }
+
+    @media (min-width: 1120px) {
+    }
+  }
+
+  .main__page-content {
+    padding-top: 24px;
+    padding-right: 16px;
+
+    @media (min-width: 768px) {
+    }
+
+    @media (min-width: 1120px) {
+    }
+  }
+
+  .main__image-tablet,
+  .main__image-desktop {
+    display: none;
+
+    @media (min-width: 768px) {
+    }
+
+    @media (min-width: 1120px) {
+    }
+  }
+
+  .main__image-phone {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 768px) {
+    }
+
+    @media (min-width: 1120px) {
+    }
+  }
+
+  @media (min-width: 768px) {
+    .main {
+      height: 416px;
+    }
+
+    .main__general-wrapper {
+    }
+
+    .main__title-wrapper {
+      margin-bottom: 32px;
+    }
+
+    .main__page-content {
+      display: flex;
+      padding-top: 32px;
+      padding-right: 25px;
+    }
+
+    .main__image-phone,
+    .main__image-desktop,
+    .title__icon-text {
+      display: none;
+    }
+
+    .main__image-tablet {
+      position: static;
+      width: 360px;
+      height: 208px;
+    }
+  }
+
+  @media (min-width: 1120px) {
+    .main__title-wrapper {
+      padding-right: 32px;
+    }
+
+    .main {
+      height: 535px;
+    }
+
+    .main__general-wrapper {
+      padding-top: 42px;
+      padding-left: 34px;
+    }
+
+    .main__title-wrapper {
+      margin-bottom: 8px;
+    }
+
+    .main__page-content {
+      display: flex;
+      padding-top: 16.22px;
+      padding-right: 28.65px;
+    }
+
+    .main__image-phone,
+    .main__image-tablet {
+      display: none;
+    }
+
+    .main__image-desktop {
+      position: static;
+      width: 531.35px;
+      height: 307px;
+    }
+  }
+
+  .main__image-phone,
+  .main__image-tablet,
+  .main__image-desktop {
+    border-radius: 5px;
+  }
+}
