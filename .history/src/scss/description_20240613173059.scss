@@ -1,0 +1,55 @@
+.description {
+  @media (min-width: 768px) {
+    height: 208px;
+    padding-right: 48px;
+  }
+
+  @media (min-width: 1120px) {
+    padding-right: 36px;
+  }
+
+  .description__text {
+    font-size: 14px;
+    color: #1b1c21;
+    overflow: hidden;
+    font-weight: 500;
+
+    height: 90px;
+    line-height: 18px;
+
+    @media (min-width: 768px) {
+      min-width: 312px;
+      max-height: 160px;
+      line-height: 20px;
+    }
+
+    @media (min-width: 1120px) {
+      min-width: 490px;
+      max-height: 160px;
+      line-height: 20px;
+    }
+  }
+
+  .description__toggler-text {
+    font-family: 'TT Lakes Medium', Times, serif;
+    display: flex;
+    line-height: 24px;
+
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    &:before {
+      content: url('../img/ic-expand.svg');
+    }
+
+    @media (min-width: 768px) {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 1120px) {
+      margin-top: 13.78px;
+      margin-bottom: 13.78px;
+    }
+  }
+}

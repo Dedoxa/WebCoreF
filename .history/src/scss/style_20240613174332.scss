@@ -1,9 +1,8 @@
+@import url('./\(import\)fonts.scss');
 @import url('../../node_modules/swiper/swiper-bundle.css');
 
-@import url('./\(import\)fonts.scss');
 @import url('./\(tag\)html.scss');
 @import url('./\(tag\)svg.scss');
-@import url('./\(id\)icons.scss');
 
 @import url('./upper-menu.scss');
 @import url('./main.scss');
@@ -17,4 +16,6 @@
 @import url('./brand-plate.scss');
 @import url('./toggler-showHide.scss');
 
-@import url('./aside-menu.scss');
+@import url('./aside.scss');
+@import url('./contacts.scss');
+@import url('./language.scss');

@@ -7,26 +7,26 @@
   font-weight: 600;
   background-color: #fff;
   box-shadow: 5px 0 50px 3px #bbb;
-}
 
-.aside__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  padding-top: 24px;
-  padding-right: 24px;
-  padding-bottom: 32px;
-  padding-left: 24px;
-}
+  .aside__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 32px;
+    padding-left: 24px;
+  }
 
-.aside-header {
-  background-color: #ffffff;
-}
+  .aside__header {
+    background-color: #ffffff;
+  }
 
-.aside-header__wrapper {
-  display: flex;
-  justify-content: space-between;
+  .aside__subwrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .aside-header__left,

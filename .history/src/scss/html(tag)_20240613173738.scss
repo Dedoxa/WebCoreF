@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+  font-family: 'TT Lakes Regular', Times, serif;
+
+  * {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+
+    &:before,
+    &:after {
+      box-sizing: inherit;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
