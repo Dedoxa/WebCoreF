@@ -123,8 +123,7 @@
   }
 
   .plates__devices-wrapper {
-    height: 205px;
-    @media (min-width: 768px) {
+    @media (min-width: 768) {
       height: 170px;
     }
   }

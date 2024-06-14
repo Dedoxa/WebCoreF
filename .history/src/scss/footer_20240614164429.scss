@@ -1,0 +1,23 @@
+.footer {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #7e7e82;
+
+  &:first-child {
+    text-align: left;
+  }
+
+  &:nth-child(2) {
+    text-align: center;
+  }
+
+  &:last-child {
+    text-align: end;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}

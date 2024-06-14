@@ -1,0 +1,16 @@
+.footer {
+  background-color: #f8f8f8;
+  color: #7e7e82;
+  font-size: 14px;
+
+  .aside-footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+}

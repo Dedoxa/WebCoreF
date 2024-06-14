@@ -28,8 +28,8 @@ const swiper = new Swiper('.swiper', {
 const PRESENTATION_TEXT = document.querySelector('.presentation__text')
 const PRESENTATION_TOGGLER = document.querySelector('.presentation__toggler')
 
-const PLATES_CONTAINER = document.querySelector('#plate-options')
-const PLATES_TOGGLER = document.querySelector('#plates-toggler')
+const PLATES_CONTAINER = document.querySelector('#brand-options')
+const PLATES_TOGGLER = document.querySelector('#brands-toggler')
 
 const DEVICES_CONTAINER = document.querySelector('#device-options')
 const DEVICES_TOGGLER = document.querySelector('#devices-toggler')

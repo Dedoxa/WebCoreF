@@ -58,7 +58,7 @@
 
   .plates__swiper-container {
     padding-top: 16px;
-    padding-bottom: 10px;
+    padding-bottom: 16px;
 
     @media (min-width: 768px) {
       padding: 0;
@@ -105,8 +105,7 @@
     }
   }
 
-  .plates__brands-wrapper,
-  .plates__devices-wrapper {
+  .plates__sw-wrapper {
     height: 116px;
     @media (min-width: 768px) {
       display: grid;
@@ -122,18 +121,10 @@
     }
   }
 
-  .plates__devices-wrapper {
-    height: 205px;
-    @media (min-width: 768px) {
-      height: 170px;
-    }
-  }
-
   .plates__slide {
   }
 
-  .plates__brand-plate,
-  .plates__device-plate {
+  .plates__brand-plate {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -163,22 +154,6 @@
       width: 240px;
     }
   }
-
-  .plates__device-plate {
-    height: 160px;
-    align-items: flex-start;
-
-    & span {
-      position: relative;
-      top: 16px;
-    }
-
-    & img {
-      position: relative;
-      top: 104px;
-    }
-  }
-
   .plates__logo {
     margin-left: 16px;
   }

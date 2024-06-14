@@ -28,8 +28,8 @@ const swiper = new Swiper('.swiper', {
 const PRESENTATION_TEXT = document.querySelector('.presentation__text')
 const PRESENTATION_TOGGLER = document.querySelector('.presentation__toggler')
 
-const PLATES_CONTAINER = document.querySelector('#plate-options')
-const PLATES_TOGGLER = document.querySelector('#plates-toggler')
+const BRANDS_CONTAINER = document.querySelector('#brand-options')
+const PLATES_TOGGLER = document.querySelector('#brands-toggler')
 
 const DEVICES_CONTAINER = document.querySelector('#device-options')
 const DEVICES_TOGGLER = document.querySelector('#devices-toggler')
@@ -47,5 +47,5 @@ function expandContainer(element, container, default_text = 'Показать в
 }
 
 expandContainer(PRESENTATION_TOGGLER, PRESENTATION_TEXT, 'Читать далее')
-expandContainer(PLATES_TOGGLER, PLATES_CONTAINER)
+expandContainer(PLATES_TOGGLER, BRANDS_CONTAINER)
 expandContainer(DEVICES_TOGGLER, DEVICES_CONTAINER)

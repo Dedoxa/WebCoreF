@@ -28,24 +28,20 @@ const swiper = new Swiper('.swiper', {
 const PRESENTATION_TEXT = document.querySelector('.presentation__text')
 const PRESENTATION_TOGGLER = document.querySelector('.presentation__toggler')
 
-const PLATES_CONTAINER = document.querySelector('#plate-options')
-const PLATES_TOGGLER = document.querySelector('#plates-toggler')
+const BRANDS_CONTAINER = document.querySelector('.plates__sw-wrapper')
+const PLATES_TOGGLER = document.querySelector('.plates__toggler')
 
-const DEVICES_CONTAINER = document.querySelector('#device-options')
-const DEVICES_TOGGLER = document.querySelector('#devices-toggler')
-
-function expandContainer(element, container, default_text = 'Показать всё') {
+function expandContainer(element, container) {
   element.addEventListener('click', function () {
     if (element.textContent !== 'Скрыть') {
       container.classList.add('jsExpand')
       element.textContent = 'Скрыть'
     } else if (element.textContent === 'Скрыть') {
       container.classList.remove('jsExpand')
-      element.textContent = default_text
+      element.textContent = 'Показать всё'
     }
   })
 }
 
-expandContainer(PRESENTATION_TOGGLER, PRESENTATION_TEXT, 'Читать далее')
-expandContainer(PLATES_TOGGLER, PLATES_CONTAINER)
-expandContainer(DEVICES_TOGGLER, DEVICES_CONTAINER)
+expandContainer(PLATES_TOGGLER, BRANDS_CONTAINER)
+expandContainer(PRESENTATION_TOGGLER, PRESENTATION_TEXT)
