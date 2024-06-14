@@ -32,7 +32,7 @@
   .presentation__image-phone {
     margin: 0 auto;
 
-    @media (min-width: 321px) {
+    @media (min-width: 321) {
       border-radius: 5px;
     }
 
@@ -89,8 +89,8 @@
     display: none;
 
     @media (min-width: 1120px) {
-      font-family: 'TT Lakes Medium', Times, serif;
       display: inline;
+      font-weight: 600;
       margin-right: 8px;
       margin-top: auto;
       margin-bottom: auto;
@@ -113,19 +113,21 @@
   }
 
   .presentation__heading {
-    font-family: 'TT Lakes Bold', Times, serif;
-    font-size: 28px;
-    color: #1b1c21;
+    @media (min-width: 1120px) {
+      font-family: 'TT Lakes Bold', Times, serif;
+      font-size: 28px;
+      color: #1b1c21;
 
-    &:before {
-      content: '';
-      display: block;
-      position: absolute;
-      left: -4px;
-      width: 8px;
-      height: 40px;
-      border-radius: 10px;
-      background-color: #41f6d7;
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -4px;
+        width: 8px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #41f6d7;
+      }
     }
   }
 
@@ -145,7 +147,6 @@
   .presentation__buttons {
     display: flex;
     overflow: scroll;
-    text-align: left;
 
     @media (min-width: 1120px) {
       display: block;
@@ -227,12 +228,14 @@
 
       @media (min-width: 768px) {
         min-width: 312px;
-        height: 160px;
+        max-height: 160px;
         line-height: 20px;
       }
 
       @media (min-width: 1120px) {
         min-width: 490px;
+        max-height: 160px;
+        line-height: 20px;
       }
     }
 
