@@ -1,3 +1,8 @@
+.swiper {
+  height: 116px;
+  width: 100%;
+}
+
 .swiper-pagination {
   .swiper-pagination-bullet {
     width: 12px;
@@ -7,5 +12,11 @@
 
   .swiper-pagination-bullet-active {
     background-color: #b5b6bc;
+  }
+}
+
+.swiper-slide {
+  @media (min-width: 768) {
+    width: max-content;
   }
 }

@@ -1,3 +1,7 @@
+.swiper {
+  height: 116px;
+}
+
 .swiper-pagination {
   .swiper-pagination-bullet {
     width: 12px;
@@ -8,4 +12,8 @@
   .swiper-pagination-bullet-active {
     background-color: #b5b6bc;
   }
+}
+
+.swiper-wrapper {
+  display: flex;
 }

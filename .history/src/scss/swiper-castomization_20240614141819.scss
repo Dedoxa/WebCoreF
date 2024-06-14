@@ -1,0 +1,28 @@
+.swiper-pagination {
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #dddddd;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #b5b6bc;
+  }
+}
+
+.swiper-wrapper {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); /* настройте количество колонок */
+  gap: 10px; /* отступы между элементами */
+}
+
+.swiper-slide {
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px; /* настройте высоту слайда */
+}
