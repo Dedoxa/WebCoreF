@@ -1,9 +1,9 @@
-.plates {
+.table {
   background-color: #f8f8f8;
   display: flex;
   flex-direction: column;
 
-  .plates__heading {
+  .table__heading {
     font-family: 'TT Lakes Medium', Times, serif;
     background-image: linear-gradient(to right, #ffffff00, #fff);
 
@@ -15,12 +15,12 @@
     }
   }
 
-  .plates__content-area {
+  .table__content-area {
     display: flex;
     flex-direction: column;
   }
 
-  .plates__wrapper {
+  .table__wrapper {
     @media (min-width: 768px) {
       padding-top: 24px;
       padding-bottom: 24px;
@@ -36,7 +36,7 @@
     }
   }
 
-  .plates__wrapper-heading {
+  .table__wrapper-heading {
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
@@ -50,13 +50,13 @@
     }
   }
 
-  .plates__wrapper-toggler {
+  .table__wrapper-toggler {
     display: flex;
     padding-top: 0;
     padding-right: 0;
   }
 
-  .plates__swiper-container {
+  .table__swiper-container {
     padding-top: 16px;
     padding-bottom: 10px;
 
@@ -65,7 +65,7 @@
     }
   }
 
-  .plates__toggler-area {
+  .table__toggler-area {
     display: none;
 
     @media (min-width: 768px) {
@@ -73,7 +73,7 @@
     }
   }
 
-  .plates__swiper {
+  .table__swiper {
     width: 100%;
 
     &::after {
@@ -105,9 +105,8 @@
     }
   }
 
-  .plates__brands-wrapper,
-  .plates__devices-wrapper,
-  .plates__table-wrapper {
+  .table__brands-wrapper,
+  .table__devices-wrapper {
     height: 116px;
     @media (min-width: 768px) {
       display: grid;
@@ -123,20 +122,18 @@
     }
   }
 
-  .plates__devices-wrapper {
+  .table__devices-wrapper {
     height: 205px;
     @media (min-width: 768px) {
       height: 170px;
     }
   }
 
-  .plates__table-wrapper {
-    height: 245px;
+  .table__slide {
   }
 
-  .plates__brand-plate,
-  .plates__device-plate,
-  .plates__table-plate {
+  .table__brand-plate,
+  .table__device-plate {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -163,13 +160,9 @@
     @media (min-width: 1440px) {
       width: 240px;
     }
-
-    .plates__dropdown-wrapper {
-      margin-right: 16px;
-    }
   }
 
-  .plates__device-plate {
+  .table__device-plate {
     height: 160px;
     align-items: flex-start;
 
@@ -184,16 +177,18 @@
     }
   }
 
-  .plates__table-plate {
-    width: 260px;
-    height: 200px;
-  }
-
-  .plates__logo {
+  .table__logo {
     margin-left: 16px;
   }
 
-  .plates__toggler {
+  .table__dropdown {
+    content: url('../img/ic-dropdown.svg');
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+  }
+
+  .table__toggler {
     cursor: pointer;
     font-family: 'TT Lakes Medium', Times, serif;
     display: flex;

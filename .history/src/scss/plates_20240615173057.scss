@@ -106,8 +106,7 @@
   }
 
   .plates__brands-wrapper,
-  .plates__devices-wrapper,
-  .plates__table-wrapper {
+  .plates__devices-wrapper {
     height: 116px;
     @media (min-width: 768px) {
       display: grid;
@@ -130,13 +129,11 @@
     }
   }
 
-  .plates__table-wrapper {
-    height: 245px;
+  .plates__slide {
   }
 
   .plates__brand-plate,
-  .plates__device-plate,
-  .plates__table-plate {
+  .plates__device-plate {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -149,7 +146,7 @@
     transition: background-color 0.1s linear;
 
     margin: auto;
-    width: 240px;
+    width: 190px;
 
     &:hover {
       background-color: #00000014;
@@ -162,10 +159,6 @@
 
     @media (min-width: 1440px) {
       width: 240px;
-    }
-
-    .plates__dropdown-wrapper {
-      margin-right: 16px;
     }
   }
 
@@ -184,13 +177,15 @@
     }
   }
 
-  .plates__table-plate {
-    width: 260px;
-    height: 200px;
-  }
-
   .plates__logo {
     margin-left: 16px;
+  }
+
+  .plates__dropdown {
+    content: url('../img/ic-dropdown.svg');
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
   }
 
   .plates__toggler {

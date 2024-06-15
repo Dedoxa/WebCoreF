@@ -106,8 +106,7 @@
   }
 
   .plates__brands-wrapper,
-  .plates__devices-wrapper,
-  .plates__table-wrapper {
+  .plates__devices-wrapper {
     height: 116px;
     @media (min-width: 768px) {
       display: grid;
@@ -130,8 +129,7 @@
     }
   }
 
-  .plates__table-wrapper {
-    height: 245px;
+  .plates__slide {
   }
 
   .plates__brand-plate,
@@ -182,11 +180,6 @@
       position: relative;
       top: 104px;
     }
-  }
-
-  .plates__table-plate {
-    width: 260px;
-    height: 200px;
   }
 
   .plates__logo {
