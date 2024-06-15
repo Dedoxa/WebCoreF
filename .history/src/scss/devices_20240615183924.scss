@@ -1,0 +1,21 @@
+.plates__devices-wrapper .plates__brands-wrapper {
+  height: 205px;
+  @media (min-width: 768px) {
+    height: 170px;
+  }
+}
+
+.plates__device-plate {
+  height: 160px;
+  align-items: flex-start;
+
+  & span {
+    position: relative;
+    top: 16px;
+  }
+
+  & img {
+    position: relative;
+    top: 104px;
+  }
+}

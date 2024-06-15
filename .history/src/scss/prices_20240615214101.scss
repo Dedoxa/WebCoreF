@@ -1,0 +1,9 @@
+.priceText {
+  font-size: 14px;
+
+  span:last-child {
+    &::after {
+      content: url('./img/ic-right-pink-arrow.svg');
+    }
+  }
+}
