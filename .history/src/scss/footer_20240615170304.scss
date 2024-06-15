@@ -1,0 +1,27 @@
+.footer {
+  background-color: #f8f8f8;
+  color: #7e7e82;
+  font-size: 14px;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #d9fff5;
+  }
+
+  .footer__wrapper {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 24px;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+}
