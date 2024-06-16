@@ -118,13 +118,24 @@
     }
   }
 
+  .plates__brands-swiper {
+    @media (min-width: 768px) {
+      height: 3200px;
+    }
+  }
+  .plates__devices-swiper {
+    @media (min-width: 768px) {
+      height: 200px;
+    }
+  }
+
   .plates__brands-wrapper,
   .plates__devices-wrapper {
     height: 116px;
     @media (min-width: 768px) {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(224px, 1fr));
-      height: 150px;
+      height: 176px;
       row-gap: 16px;
       column-gap: 16px;
     }
@@ -138,7 +149,7 @@
   .plates__devices-wrapper {
     height: 205px;
     @media (min-width: 768px) {
-      height: 150px;
+      height: 170px;
     }
   }
 

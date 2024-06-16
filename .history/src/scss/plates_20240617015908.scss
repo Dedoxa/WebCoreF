@@ -99,22 +99,10 @@
     }
 
     @media (min-width: 768px) {
-      padding-top: 24px;
-      padding-bottom: 24px;
-      padding-right: 24px;
-      padding-left: 24px;
-
       &::after,
       &::before {
         display: none;
       }
-    }
-
-    @media (min-width: 1440px) {
-      padding-top: 24px;
-      padding-bottom: 24px;
-      padding-right: 32px;
-      padding-left: 32px;
     }
   }
 
@@ -124,9 +112,9 @@
     @media (min-width: 768px) {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(224px, 1fr));
-      height: 150px;
-      row-gap: 16px;
-      column-gap: 16px;
+      height: 176px;
+      // row-gap: 16px;
+      // column-gap: 24px;
     }
 
     @media (min-width: 1440px) {
@@ -138,7 +126,7 @@
   .plates__devices-wrapper {
     height: 205px;
     @media (min-width: 768px) {
-      height: 150px;
+      height: 170px;
     }
   }
 

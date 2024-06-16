@@ -19,11 +19,11 @@ const swiper = new Swiper('.swiper', {
     },
     768: {
       enabled: false,
-      spaceBetween: 24
+      spaceBetween: 0
     },
     1120: {
       enabled: false,
-      spaceBetween: 32
+      spaceBetween: 0
     }
   }
 })

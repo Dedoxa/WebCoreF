@@ -81,10 +81,6 @@
   .presentation__icon {
     display: none;
 
-    &:hover {
-      opacity: 100%;
-    }
-
     @media (min-width: 1440px) {
       display: block;
     }
@@ -129,10 +125,10 @@
     transition: color linear 0.2s;
 
     &:hover {
-      transition-property: color;
-      transition-duration: 0.2s;
-      transition-timing-function: linear;
+      transition-property: color, opacity;
+      transition: color linear 0.2s;
       color: #ff3e79;
+      opacity: 50%;
     }
 
     @media (min-width: 1440px) {

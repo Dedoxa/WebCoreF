@@ -177,6 +177,7 @@
   }
 
   .presentation__right-fade-effect {
+    z-index: 3;
     position: absolute;
     right: 0px;
     width: 24px;

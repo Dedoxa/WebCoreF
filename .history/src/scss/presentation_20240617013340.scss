@@ -129,10 +129,11 @@
     transition: color linear 0.2s;
 
     &:hover {
-      transition-property: color;
+      transition-property: color, background-color;
       transition-duration: 0.2s;
       transition-timing-function: linear;
       color: #ff3e79;
+      background-color: #7e7e82;
     }
 
     @media (min-width: 1440px) {
