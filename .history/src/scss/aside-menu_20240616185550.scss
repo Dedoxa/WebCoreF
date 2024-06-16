@@ -6,10 +6,9 @@
   height: 100vh;
   font-weight: 600;
   background-color: #fff;
-  box-shadow: 0 0 0 0 transparent;
+  box-shadow: 5px 0 50px 3px #bbb;
   z-index: 3;
   border: none;
-  transition: all ease 0.4s;
 
   @media (min-width: 768px) {
     width: 320px;
@@ -43,12 +42,6 @@
 
   .aside-menu__icon {
     margin: auto 0;
-  }
-
-  #burger-cross {
-    @media (min-width: 1440px) {
-      display: none;
-    }
   }
 
   .aside-menu__modal-icon {
@@ -227,10 +220,7 @@
 }
 
 .aside-menu--left {
-  transform: translateX(-100%);
-
   @media (min-width: 1440px) {
-    transform: translateX(0);
     position: static;
     display: block;
     box-shadow: none;
@@ -240,7 +230,7 @@
 .aside-menu--right {
   right: 0;
   height: 100%;
-  transform: translateX(100%);
+  box-shadow: 5px 0 50px 3px #bbb;
 
   @media (min-width: 1440px) {
     position: fixed;

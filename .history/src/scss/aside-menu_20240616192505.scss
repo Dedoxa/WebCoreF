@@ -45,12 +45,6 @@
     margin: auto 0;
   }
 
-  #burger-cross {
-    @media (min-width: 1440px) {
-      display: none;
-    }
-  }
-
   .aside-menu__modal-icon {
     @media (min-width: 1440px) {
       position: absolute;
