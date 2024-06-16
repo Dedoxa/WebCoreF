@@ -7,7 +7,7 @@
   font-weight: 600;
   background-color: #fff;
   box-shadow: 0 0 0 0 transparent;
-  z-index: 4;
+  z-index: 3;
   border: none;
   transition: all ease 0.4s;
 
@@ -45,7 +45,7 @@
     margin: auto 0;
   }
 
-  .burger-cross {
+  #burger-cross {
     @media (min-width: 1440px) {
       display: none;
     }
@@ -240,7 +240,7 @@
 .aside-menu--right {
   right: 0;
   height: 100%;
-  transform: translateX(120%);
+  transform: translateX(110%);
 
   @media (min-width: 1440px) {
     position: fixed;

@@ -190,7 +190,7 @@
 
   .presentation__description {
     text-align: left;
-    height: 103px;
+    height: 100px;
     overflow: hidden;
 
     @media (min-width: 768px) {
@@ -219,8 +219,17 @@
     }
   }
   .presentation__toggler {
+    font-family: 'TT Lakes Medium', Times, serif;
+    display: flex;
+    line-height: 24px;
+    cursor: pointer;
+
     margin-top: 16px;
     margin-bottom: 16px;
+
+    &:before {
+      content: url('../img/ic-expand.svg');
+    }
 
     @media (min-width: 768px) {
       margin-top: 10px;

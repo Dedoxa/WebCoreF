@@ -32,6 +32,8 @@ function showAsideMenu(ton, toff, mainAside, blur, ...otherAsides) {
     })
   }
 
+  toff.classList.add('red-class')
+
   toff.addEventListener('click', function () {
     if (mainAside.classList.contains('jsShow-aside')) {
       mainAside.classList.remove('jsShow-aside')

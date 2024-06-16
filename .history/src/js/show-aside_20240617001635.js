@@ -9,7 +9,7 @@ const FEEDBACK_CROSS_ICON = document.querySelector('.feedback-cross')
 const FEEDBACK_MENU = document.querySelector('.feedback-menu')
 
 const CALL_ICON = document.querySelectorAll('.call')
-const CALL_CROSS_ICON = document.querySelector('.call-cross')
+const CALL_CROSS_ICON = document.querySelector('.call-menu')
 const CALL_MENU = document.querySelector('.call-menu')
 
 let asideIsOpened = false
@@ -31,6 +31,8 @@ function showAsideMenu(ton, toff, mainAside, blur, ...otherAsides) {
       }
     })
   }
+
+  toff.classList.add('red')
 
   toff.addEventListener('click', function () {
     if (mainAside.classList.contains('jsShow-aside')) {

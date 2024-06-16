@@ -11,11 +11,9 @@ function expandContainer(element, container, default_text = 'Показать в
   element.addEventListener('click', function () {
     if (element.textContent !== 'Скрыть') {
       container.classList.add('jsExpand')
-      element.classList.add('jsRotateUD')
       element.textContent = 'Скрыть'
     } else if (element.textContent === 'Скрыть') {
       container.classList.remove('jsExpand')
-      element.classList.remove('jsRotateUD')
       element.textContent = default_text
     }
   })
