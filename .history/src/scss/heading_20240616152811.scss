@@ -1,0 +1,12 @@
+.heading {
+  font-family: 'TT Lakes Bold', Times, serif;
+  font-size: 28px;
+  color: #1b1c21;
+
+  &:before {
+    content: url('../img/highlight.svg');
+    display: block;
+    position: absolute;
+    left: -4px;
+  }
+}

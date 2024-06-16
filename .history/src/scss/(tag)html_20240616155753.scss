@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+  font-family: 'TT Lakes Regular', Times, serif;
+  margin: 0;
+  padding: 0;
+
+  * {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+
+    &:before,
+    &:after {
+      box-sizing: inherit;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  body {
+    @media (min-width: 1440px) {
+      display: flex;
+    }
+  }
+}
+
+html,
+body {
+  height: 100%;
+}

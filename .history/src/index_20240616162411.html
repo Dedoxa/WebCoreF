@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WebCoreFinal</title>
+  </head>
+  <body>
+    <div class="blur"></div>
+    <div>
+      <aside class="aside-menu">
+        <div class="aside-menu__wrapper">
+          <div>
+            <div class="aside-menu__header">
+              <div class="aside-menu__subwrapper">
+                <div class="aside-menu__header-left">
+                  <a id="cross" href="#" class="icon aside-menu__icon"></a>
+                  <a id="logo" href="#" class="icon aside-menu__icon"></a>
+                </div>
+                <div class="aside-menu__header-right">
+                  <a id="search" href="#" class="icon aside-menu__icon"></a>
+                </div>
+              </div>
+            </div>
+            <ul class="aside-menu__links-list">
+              <li class="aside-menu__link aside-menu__link--active">
+                <a href="#" class=""> Ремонт техники </a>
+              </li>
+              <li class="aside-menu__link"><a href="#"> Услуги и сервисы </a></li>
+              <li class="aside-menu__link"><a href="#"> Корпоративным клиентам </a></li>
+              <li class="aside-menu__link"><a href="#"> Продавцам техники </a></li>
+              <li class="aside-menu__link"><a href="#"> Партнерам </a></li>
+              <li class="aside-menu__link"><a href="#"> Производителям </a></li>
+              <li class="aside-menu__link"><a href="#"> Наши сервисные центры </a></li>
+              <li class="aside-menu__link"><a href="#"> Контакты </a></li>
+            </ul>
+          </div>
+          <section class="aside-menu__down-section">
+            <div class="aside-menu__down-wrapper">
+              <div class="aside-menu__down-icons">
+                <a id="call" href="#" class="icon aside-menu__icon"></a>
+                <a id="chat" href="#" class="icon aside-menu__icon"></a>
+                <a id="profile" href="#" class="icon aside-menu__icon"></a>
+              </div>
+              <div>
+                <a href="mailto:mail.@cps.com" class="aside-menu__email"><span>mail.@cps.com</span></a>
+                <a href="tel:+88008908900" class="aside-menu__phone-number"><span>8 800 890 8900</span></a>
+              </div>
+              <div class="aside-menu__language-choice">
+                <span class="aside-menu__language-option aside-menu__language-option--active">RU</span>
+                <span class="aside-menu__language-option">EN</span>
+                <span class="aside-menu__language-option">CH</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </aside>
+    </div>
+    <div>
+      <dialog class="aside-menu aside-menu--right">
+        <div class="aside-menu__wrapper aside-menu__modal-wrapper">
+          <div>
+            <div class="aside-menu__header">
+              <div class="aside-menu__subwrapper">
+                <div class="aside-menu__header-left">
+                  <a id="cross" href="#" class="icon aside-menu__icon aside-menu__modal-icon"></a>
+                </div>
+              </div>
+            </div>
+            <div class="aside-menu__heading-wrapper">
+              <h2 class="heading">Обратная связь</h2>
+            </div>
+            <form class="aside-menu__form" action="#" method="get">
+              <input class="aside-menu__form-field" type="text" placeholder="Имя" required>
+              <input class="aside-menu__form-field" type="tel" placeholder="Телефон" required>
+              <input class="aside-menu__form-field" type="email" placeholder="Электронная почта" required>
+              <textarea class="aside-menu__form-field aside-menu__form-message" placeholder="Сообщение" required></textarea>
+              <p class="aside-menu__text">Нажимая “отправить”, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></p>
+              <button type="submit" class="pink-button">отправить</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+      <dialog class="aside-menu aside-menu--right">
+        <div class="aside-menu__wrapper aside-menu__modal-wrapper">
+          <div>
+            <div class="aside-menu__header">
+              <div class="aside-menu__subwrapper">
+                <div class="aside-menu__header-left">
+                  <a id="cross" href="#" class="icon aside-menu__icon aside-menu__modal-icon"></a>
+                </div>
+              </div>
+            </div>
+            <div class="aside-menu__heading-wrapper">
+              <h2 class="heading">Заказать звонок</h2>
+            </div>
+            <form class="aside-menu__form" action="#" method="get">
+              <input class="aside-menu__form-field" type="tel" placeholder="Телефон" required>
+              <p class="aside-menu__text">Нажимая “отправить”, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></p>
+              <button type="submit" class="pink-button">отправить</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+      <header class="header">
+        <div class="header__left-side">
+          <a id="burger" href="#" class="icon header__icon"></a>
+          <a id="logo" href="#" class="icon header__icon"></a>
+        </div>
+        <div class="header__right-side">
+          <a id="call" href="#" class="icon header__icon"></a>
+          <a id="chat" href="#" class="icon header__icon"></a>
+          <a id="profile" href="#" class="icon header__icon"></a>
+          <a id="repair" href="#" class="icon header__icon"></a>
+          <a id="checkStatus" href="#" class="icon header__icon"></a>
+        </div>
+      </header>
+      <main>
+        <section class="presentation">
+          <div class="presentation__wrapper">
+            <div class="presentation__title">
+              <h1 class="heading">Услуги и сервисы</h1>
+              <div class="presentation__right-area">
+                <label class="presentation__icon-area">
+                  <span class="presentation__icon-text">Оставить заявку</span>
+                  <a id="repair" href="#" class="icon presentation__icon"></a>
+                </label>
+                <label class="presentation__icon-area">
+                  <span class="presentation__icon-text">Статус ремонта</span>
+                  <a id="checkStatus" href="#" class="icon presentation__icon"></a>
+                </label>
+              </div>
+            </div>
+            <div class="presentation__buttons">
+              <button href="#" class="presentation__button presentation__button--focus">
+                Ремонтируемые бренды
+              </button>
+              <button href="#" class="presentation__button">
+                Дополнительные услуги
+              </button>
+              <button href="#" class="presentation__button">
+                Ремонтируемые устройства
+              </button>
+              <button href="#" class="presentation__button">
+                Цены на услуги
+              </button>
+              <button href="#" class="presentation__button">
+                Адреса сервисных центров
+              </button>
+              <button href="#" class="presentation__button">
+                Специальные цены
+              </button>
+              <button href="#" class="presentation__button">Отзывы</button>
+              <div class="presentation__right-fade-effect"></div>
+            </div>
+            <div class="presentation__container">
+              <div class="presentation__description">
+                <p class="presentation__text">
+                  Мы являемся авторизованным сервисным центром по ремонту техники
+                  Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                  официальной гарантией производителя. <br /><br />
+                  Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                  партнера, что подтверждает большое количество постоянных клиентов.
+                  Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                  очередь, советуют нас родным и близким.
+                </p>
+                <span class="presentation__toggler">Читать далее</span>
+              </div>
+              <img src="img/CPS-img-tablet.jpg" alt="" class="presentation__image-tablet" />
+              <img
+                src="img/CPS-img-desktop.jpg"
+                alt=""
+                class="presentation__image-desktop"
+              />
+            </div>
+          </div>
+          <img src="img/CPS-img-phone.jpg" alt="" class="presentation__image-phone" />
+        </section>
+        <section class="plates">
+          <header class="plates__heading">
+              <div class="plates__wrapper plates__wrapper-heading">
+                  <span>Ремонт техники различных брендов</span>
+              </div>
+          </header>
+          <div class="plates__content-area">
+              <div class="plates__wrapper">
+                  <div class="plates__swiper-container">
+                      <div class="swiper plates__swiper">
+                          <div id="plate-options" class="swiper-wrapper plates__brands-wrapper">
+                              <div class="swiper-slide">
+                                  <div class="plates__brand-plate">
+                                      <img src="../img/logo-lenovo.png"  width="108" height="32"  class="plates__logo"></img>
+                                      <div class="plates__dropdown-wrapper">
+                                        <a href="#">
+                                          <img src="./img/ic-dropdown.svg"></img>
+                                        </a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="plates__brand-plate">
+                                      <img src="../img/logo-samsung.png" width="116" height="38.52" class="plates__logo"></img>
+                                      <div class="plates__dropdown-wrapper">
+                                        <a href="#">
+                                          <img src="./img/ic-dropdown.svg"></img>
+                                        </a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="plates__brand-plate">
+                                      <img src="../img/logo-apple.png" width="44" height="44" class="plates__logo"></img>
+                                      <div class="plates__dropdown-wrapper">
+                                        <a href="#">
+                                          <img src="./img/ic-dropdown.svg"></img>
+                                        </a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="plates__brand-plate">
+                                      <img src="../img/logo-viewSonic.png" width="128" height="21" class="plates__logo"></img>
+                                      <div class="plates__dropdown-wrapper">
+                                        <a href="#">
+                                          <img src="./img/ic-dropdown.svg"></img>
+                                        </a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="plates__brand-plate">
+                                      <img src="../img/logo-bosch.png" width="128" height="28.6" class="plates__logo"></img>
+                                      <div class="plates__dropdown-wrapper">
+                                        <a href="#">
+                                          <img src="./img/ic-dropdown.svg"></img>
+                                        </a>
+                                      </div>
+                                  </div> 
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="plates__brand-plate">
+                                      <img src="../img/logo-hp.png" width="52" height="52" class="plates__logo"></img>
+                                      <div class="plates__dropdown-wrapper">
+                                        <a href="#">
+                                          <img src="./img/ic-dropdown.svg"></img>
+                                        </a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="plates__brand-plate">
+                                      <img src="../img/logo-acer.png" width="94" height="24" class="plates__logo"></img>
+                                      <div class="plates__dropdown-wrapper">
+                                        <a href="#">
+                                          <img src="./img/ic-dropdown.svg"></img>
+                                        </a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="plates__brand-plate">
+                                      <img src="../img/logo-sony.png" width="128" height="25.6" class="plates__logo"></img>
+                                      <div class="plates__dropdown-wrapper">
+                                        <a href="#">
+                                          <img src="./img/ic-dropdown.svg"></img>
+                                        </a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="plates__brand-plate">
+                                      <img src="../img/logo-lenovo.png"  width="108" height="32"  class="plates__logo"></img>
+                                      <div class="plates__dropdown-wrapper">
+                                        <a href="#">
+                                          <img src="./img/ic-dropdown.svg"></img>
+                                        </a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="plates__toggler-area">
+                  <label class="plates__wrapper plates__wrapper-toggler">
+                      <span id="plates-toggler" class="plates__toggler">Показать всё</span>
+                  </label>
+              </div>
+          </div>
+        </section>
+        <section class="plates">
+          <header class="plates__heading">
+              <div class="plates__wrapper plates__wrapper-heading">
+                  <span>Ремонт различных видов техники</span>
+              </div>
+          </header>
+          <div class="plates__content-area">
+              <div class="plates__wrapper">
+                  <div class="plates__swiper-container">
+                      <div class="swiper plates__swiper">
+                          <div id="device-options" class="swiper-wrapper plates__devices-wrapper">
+                              <div class="swiper-slide">
+                                  <div class="plates__device-plate">
+                                    <span class="plates__logo">Ремонт ноутбуков</span>
+                                    <div class="plates__dropdown-wrapper">
+                                      <a href="#">
+                                        <img src="./img/ic-dropdown.svg"></img>
+                                      </a>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="plates__device-plate">
+                                    <span class="plates__logo">Ремонт планшетов</span>
+                                    <div class="plates__dropdown-wrapper">
+                                      <a href="#">
+                                        <img src="./img/ic-dropdown.svg"></img>
+                                      </a>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="plates__device-plate">
+                                    <span class="plates__logo">Ремонт мониторов</span>
+                                    <div class="plates__dropdown-wrapper">
+                                      <a href="#">
+                                        <img src="./img/ic-dropdown.svg"></img>
+                                      </a>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="plates__device-plate">
+                                    <span class="plates__logo">Ремонт бытовой техники</span>
+                                    <div class="plates__dropdown-wrapper">
+                                      <a href="#">
+                                        <img src="./img/ic-dropdown.svg"></img>
+                                      </a>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="plates__device-plate">
+                                    <span class="plates__logo">Ремонт кукухи</span>
+                                    <div class="plates__dropdown-wrapper">
+                                      <a href="#">
+                                        <img src="./img/ic-dropdown.svg"></img>
+                                      </a>
+                                    </div>
+                                  </div> 
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="plates__device-plate">
+                                    <span class="plates__logo">Ремонт шмемонт</span>
+                                    <div class="plates__dropdown-wrapper">
+                                      <a href="#">
+                                        <img src="./img/ic-dropdown.svg"></img>
+                                      </a>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="plates__device-plate">
+                                    <span class="plates__logo">Ремонт бельмонт</span>
+                                    <div class="plates__dropdown-wrapper">
+                                      <a href="#">
+                                        <img src="./img/ic-dropdown.svg"></img>
+                                      </a>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="plates__device-plate">
+                                    <span class="plates__logo">Ремонт взял тебя на понт</span>
+                                    <div class="plates__dropdown-wrapper">
+                                      <a href="#">
+                                        <img src="./img/ic-dropdown.svg"></img>
+                                      </a>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="plates__device-plate">
+                                    <span class="plates__logo">Ремонт дорог (вечный*)</span>
+                                    <div class="plates__dropdown-wrapper">
+                                      <a href="#">
+                                        <img src="./img/ic-dropdown.svg"></img>
+                                      </a>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="plates__toggler-area">
+                  <label class="plates__wrapper plates__wrapper-toggler">
+                      <span id="devices-toggler" class="plates__toggler">Показать всё</span>
+                  </label>
+              </div>
+          </div>
+        </section>
+        <section class="plates">
+          <header class="plates__heading">
+            <div class="plates__wrapper plates__wrapper-heading">
+              <span>Цены на услуги</span>
+            </div>
+          </header>
+          <div class="plates__content-area">
+            <div class="plates__wrapper">
+              <div class="plates__swiper-container">
+                <div class="swiper plates__swiper">
+                  <div class="plates__table-header">
+                    <div class="plates__price-category">Ремонтные услуги</div>
+                    <div class="plates__price-category">Цена</div>
+                    <div class="plates__price-category">Срок</div>
+                  </div>
+                  <div class="swiper-wrapper plates__prices-wrapper">
+                    <div class="swiper-slide plates__price-slide">
+                      <div class="plates__price-plate">
+                        <div>
+                          <div class="plates__price-category">Ремонтные услуги</div>
+                          <div class="plates__price-text">Диагностика</div>
+                        </div>
+                        <div>
+                          <div class="plates__price-category">Цена</div>
+                          <div class="plates__price-text">Бесплатно</div>
+                        </div>
+                        <div>
+                          <div>
+                            <div class="plates__price-category">Срок</div>
+                            <div class="plates__price-text">30 мин</div>
+                          </div>
+                          <button class="pink-button">заказать</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="plates__price-plate">
+                        <div>
+                          <div class="plates__price-category">Ремонтные услуги</div>
+                          <div class="plates__price-text">Замена дисплея</div>
+                        </div>
+                        <div>
+                          <div class="plates__price-category">Цена</div>
+                          <div class="plates__price-text">1 000 ₽</div>
+                        </div>
+                        <div>
+                          <div>
+                            <div class="plates__price-category">Срок</div>
+                            <div class="plates__price-text">30-120 мин</div>
+                          </div>
+                          <button class="pink-button">заказать</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="plates__price-plate">
+                        <div>
+                          <div class="plates__price-category">Ремонтные услуги</div>
+                          <div class="plates__price-text">Замена полифонического динамика</div>
+                        </div>
+                        <div>
+                          <div class="plates__price-category">Цена</div>
+                          <div class="plates__price-text">1 000 ₽</div>
+                        </div>
+                        <div>
+                          <div>
+                            <div class="plates__price-category">Срок</div>
+                            <div class="plates__price-text">30-120 мин</div>
+                          </div>
+                          <button class="pink-button">заказать</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="plates__price-plate">
+                        <div>
+                          <div class="plates__price-category">Ремонтные услуги</div>
+                          <div class="plates__price-text">Тестирование с выдачей технического заключения</div>
+                        </div>
+                        <div>
+                          <div class="plates__price-category">Цена</div>
+                          <div class="plates__price-text">1 000 ₽</div>
+                        </div>
+                        <div>
+                          <div>
+                            <div class="plates__price-category">Срок</div>
+                            <div class="plates__price-text">30-120 мин</div>
+                          </div>
+                          <button class="pink-button">заказать</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="plates__price-plate">
+                        <div>
+                          <div class="plates__price-category">Ремонтные услуги</div>
+                          <div class="plates__price-text">Замена программного обеспечения</div>
+                        </div>
+                        <div>
+                          <div class="plates__price-category">Цена</div>
+                          <div class="plates__price-text">1 000 ₽</div>
+                        </div>
+                        <div>
+                          <div>
+                            <div class="plates__price-category">Срок</div>
+                            <div class="plates__price-text">30-120 мин</div>
+                          </div>
+                          <button class="pink-button">заказать</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prices">
+            <div class="prices__wrapper">
+              <p>Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
+              <br>
+              <a href="#" class="prices__special-link">Получить коммерческое предложение</a>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="footer__wrapper">
+              <div>
+                <p>© 2019 CPS<br>Разработано командой Apesong</p>
+              </div>
+              <div>
+                <p>Политика конфиденциальности</p>
+              </div>
+              <div>
+                <p>Информация, размещенная на данной странице, не является публичной офертой</p>
+              </div>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

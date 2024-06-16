@@ -1,0 +1,248 @@
+.presentation {
+  background-color: #f8f8f8;
+  position: relative;
+  width: auto;
+  min-width: 320px;
+  min-height: 509px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    min-height: 416px;
+  }
+
+  @media (min-width: 1440px) {
+    min-height: 535px;
+  }
+
+  .presentation__wrapper {
+    height: auto;
+    padding-top: 24px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+
+    @media (min-width: 768px) {
+      padding-top: 24px;
+      padding-left: 24px;
+    }
+
+    @media (min-width: 1440px) {
+      padding-top: 42px;
+      padding-left: 34px;
+    }
+  }
+
+  .presentation__image-phone {
+    margin: 0 auto;
+
+    @media (min-width: 321px) {
+      border-radius: 5px;
+    }
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  }
+
+  .presentation__image-tablet {
+    display: none;
+    border-radius: 5px;
+
+    @media (min-width: 768px) {
+      display: block;
+      position: static;
+      width: 360px;
+      height: 208px;
+    }
+
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  }
+
+  .presentation__image-desktop {
+    display: none;
+    border-radius: 5px;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+    @media (min-width: 1440px) {
+      display: block;
+      position: static;
+      width: 531.35px;
+      height: 307px;
+    }
+  }
+
+  .presentation__icon {
+    display: none;
+
+    @media (min-width: 1440px) {
+      display: block;
+    }
+  }
+
+  .presentation__icon-text {
+    display: none;
+
+    @media (min-width: 1440px) {
+      font-family: 'TT Lakes Medium', Times, serif;
+      display: inline;
+      margin-right: 8px;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  }
+
+  .presentation__title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: 1440px) {
+      padding-right: 32px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .presentation__right-area {
+    @media (min-width: 1440px) {
+      display: flex;
+      gap: 32px;
+    }
+  }
+
+  .presentation__icon-area {
+    @media (min-width: 1440px) {
+      display: flex;
+    }
+  }
+
+  .presentation__buttons {
+    display: flex;
+    overflow: scroll;
+    text-align: left;
+
+    @media (min-width: 1440px) {
+      display: block;
+      overflow: auto;
+    }
+
+    .presentation__button {
+      vertical-align: middle;
+      padding-left: 1em;
+      padding-right: 1em;
+      height: 40px;
+      border-radius: 6px;
+      font-size: 16px;
+      color: #7e7e82;
+      white-space: nowrap;
+      border: none;
+      background-color: transparent;
+    }
+
+    .presentation__button--focus {
+      background-color: #ffffff;
+      border: 2px solid #b8ffec;
+    }
+  }
+
+  .presentation__right-fade-effect {
+    position: absolute;
+    right: 0px;
+    width: 24px;
+    height: 40px;
+    background: linear-gradient(
+      to right,
+      rgba(248, 248, 248, 0),
+      rgba(248, 248, 248, 1)
+    );
+
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  }
+
+  .presentation__container {
+    height: max-content;
+    padding-top: 24px;
+    padding-right: 16px;
+
+    @media (min-width: 768px) {
+      display: flex;
+      padding-top: 32px;
+      padding-right: 25px;
+    }
+
+    @media (min-width: 1440px) {
+      display: flex;
+      padding-top: 16.22px;
+      padding-right: 28.65px;
+    }
+  }
+
+  .presentation__description {
+    text-align: left;
+
+    @media (min-width: 768px) {
+      height: 208px;
+      padding-right: 48px;
+    }
+
+    @media (min-width: 1440px) {
+      padding-right: 36px;
+    }
+
+    .presentation__text {
+      font-size: 14px;
+      color: #1b1c21;
+      overflow: hidden;
+      font-weight: 500;
+
+      height: 90px;
+      line-height: 18px;
+
+      @media (min-width: 768px) {
+        min-width: 312px;
+        height: 160px;
+        line-height: 20px;
+      }
+
+      @media (min-width: 1440px) {
+        min-width: 490px;
+      }
+    }
+
+    .presentation__toggler {
+      font-family: 'TT Lakes Medium', Times, serif;
+      display: flex;
+      line-height: 24px;
+
+      margin-top: 16px;
+      margin-bottom: 16px;
+
+      &:before {
+        content: url('../img/ic-expand.svg');
+      }
+
+      @media (min-width: 768px) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      @media (min-width: 1440px) {
+        margin-top: 13.78px;
+        margin-bottom: 13.78px;
+      }
+    }
+  }
+}

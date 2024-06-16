@@ -1,0 +1,232 @@
+.aside-menu {
+  font-family: 'TT Lakes Regular', Times, serif;
+  width: 320px;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  font-weight: 600;
+  background-color: #fff;
+  box-shadow: 5px 0 50px 3px #bbb;
+  z-index: 3;
+  display: none;
+
+  @media (min-width: 1440px) {
+    display: block;
+    box-shadow: none;
+    position: static;
+  }
+
+  .aside-menu__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 32px;
+    padding-left: 24px;
+  }
+
+  .aside-menu__modal-wrapper {
+    @media (min-width: 1440px) {
+      padding-top: 0;
+    }
+  }
+
+  .aside-menu__header {
+    background-color: #ffffff;
+  }
+
+  .aside-menu__subwrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .aside-menu__icon {
+    margin: auto 0;
+  }
+
+  .aside-menu__modal-icon {
+    @media (min-width: 1440px) {
+      position: absolute;
+      left: -64px;
+      top: 32px;
+    }
+  }
+
+  .aside-menu__header-left {
+    display: flex;
+    flex: 0 1 auto;
+    gap: 16px;
+
+    & .icon:nth-child(2) {
+      background-color: transparent;
+      width: 98px;
+      height: 52px;
+    }
+  }
+
+  .aside-menu__header-right {
+    display: flex;
+    flex: 0 1 auto;
+    gap: 16px;
+  }
+
+  .aside-menu__heading-wrapper {
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
+
+  .aside-menu__form {
+    button {
+      position: absolute;
+      right: 24px;
+    }
+  }
+
+  .aside-menu__form-field {
+    font-family: inherit;
+    font-size: 16px;
+    height: 48px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #eaeaea;
+    margin-bottom: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 16px;
+    padding-left: 12px;
+  }
+
+  .aside-menu__form-message {
+    height: 181px;
+  }
+
+  .aside-menu__text {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 16px;
+
+    a {
+      color: #ff3e79;
+      text-decoration: none;
+    }
+  }
+
+  .aside-menu__links-list {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 46px;
+    margin-bottom: 46px;
+  }
+
+  .aside-menu__link {
+    display: flex;
+    font-size: 16px;
+    line-height: 24px;
+
+    & a {
+      text-decoration: none;
+      color: #1b1c21;
+      transition: color linear 0.2s;
+    }
+
+    & a:hover {
+      transition: color linear 0.2s;
+      color: #ff3e79;
+    }
+  }
+
+  .aside-menu__link--active {
+    & > a {
+      color: #7e7e82;
+    }
+
+    &:after {
+      content: url('../img/highlight-small.svg');
+      display: block;
+      position: absolute;
+      left: -4px;
+      transform: translateY(-4px);
+    }
+  }
+
+  .aside-menu__down-section {
+    height: 188px;
+  }
+
+  .aside-menu__down-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  .aside-menu__down-icons {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+    width: 152px;
+  }
+
+  .aside-menu__email {
+    margin-bottom: 12px;
+  }
+
+  .aside-menu__phone-number {
+    font-family: 'TT Lakes Bold', Times, serif;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .aside-menu__email,
+  .aside-menu__phone-number {
+    display: block;
+    text-decoration: none;
+    color: #1b1c21;
+  }
+
+  .aside-menu__email > span,
+  .aside-menu__phone-number > span {
+    cursor: pointer;
+    transition: color linear 0.2s;
+  }
+
+  .aside-menu__email > span:hover,
+  .aside-menu__phone-number > span:hover {
+    transition: color linear 0.2s;
+    color: #ff3e79;
+  }
+
+  .aside-menu__language-choice {
+    display: flex;
+    gap: 7px;
+  }
+
+  .aside-menu__language-option {
+    cursor: pointer;
+    transition: color linear 0.2s;
+  }
+
+  .aside-menu__language-option:hover {
+    transition: color linear 0.2s;
+    color: #ff3e79;
+  }
+
+  .aside-menu__language-option--active {
+    color: #7e7e82;
+  }
+}
+
+.aside-menu--right {
+  display: block;
+  right: 0;
+
+  @media (min-width: 1440px) {
+    position: absolute;
+    width: 440px;
+  }
+}
