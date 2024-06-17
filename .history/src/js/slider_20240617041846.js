@@ -13,6 +13,9 @@ const swiper = new Swiper('.swiper', {
 
   breakpoints: {
     1: {
+      spaceBetween: 16
+    }    
+    320: {
       enabled: true,
       loop: true,
       spaceBetween: 16

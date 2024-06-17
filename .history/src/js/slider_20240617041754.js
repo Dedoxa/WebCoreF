@@ -4,6 +4,7 @@ import Swiper from 'swiper'
 
 const swiper = new Swiper('.swiper', {
   slidesPerView: 'auto',
+  spaceBetween: 16,
 
   pagination: {
     el: '.swiper-pagination',
@@ -12,10 +13,9 @@ const swiper = new Swiper('.swiper', {
   },
 
   breakpoints: {
-    1: {
+    320: {
       enabled: true,
-      loop: true,
-      spaceBetween: 16
+      loop: true
     },
     768: {
       enabled: false,
