@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: $white-color;
+  background-color: #ffffff;
   border-bottom: 1px solid $light-turquoise-color;
   min-width: 320px;
   padding-top: 18px;
@@ -41,7 +41,7 @@
             border-radius: 5px;
             width: 2px;
             height: 32px;
-            background-color: $light-grey-color;
+            background-color: #eaeaea;
           }
         }
       }
@@ -79,7 +79,7 @@
           border-radius: 5px;
           width: 2px;
           height: 32px;
-          background-color: $light-grey-color;
+          background-color: #eaeaea;
         }
       }
     }

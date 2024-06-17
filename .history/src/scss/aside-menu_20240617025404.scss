@@ -147,7 +147,7 @@
 
   .aside-menu__link--active {
     & > a {
-      color: $grey-color;
+      color: #7e7e82;
     }
 
     &:after {
@@ -191,7 +191,7 @@
   .aside-menu__phone-number {
     display: block;
     text-decoration: none;
-    color: $parablack-color;
+    color: #1b1c21;
   }
 
   .aside-menu__email > span,
@@ -222,7 +222,7 @@
   }
 
   .aside-menu__language-option--active {
-    color: $grey-color;
+    color: #7e7e82;
   }
 }
 

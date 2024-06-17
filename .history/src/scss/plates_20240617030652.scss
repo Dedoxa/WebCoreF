@@ -40,7 +40,7 @@
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
-    color: $grey-color;
+    color: #7e7e82;
     padding-top: 15px;
     padding-bottom: 15px;
 
@@ -85,7 +85,7 @@
       top: 0px;
       width: 24px;
       height: 100%;
-      background: linear-gradient(to right, rgba(0, 0, 0, 0), $white-color);
+      background: linear-gradient(to right, rgba(0, 0, 0, 0), #fff);
     }
 
     &::before {
@@ -95,7 +95,7 @@
       left: 0px;
       width: 24px;
       height: 100%;
-      background: linear-gradient(to left, rgba(0, 0, 0, 0), $white-color);
+      background: linear-gradient(to left, rgba(0, 0, 0, 0), #fff);
     }
 
     @media (min-width: 768px) {
@@ -148,14 +148,14 @@
     justify-content: space-between;
     align-items: center;
     height: 72px;
-    background-color: $white-color;
+    background-color: #fff;
     border-radius: 5px;
-    border: 1px solid $light-grey-color;
+    border: 1px solid #eaeaea;
     transition: border-color 0.1s linear;
     width: 240px;
 
     &:hover {
-      border-color: $purple-color;
+      border-color: #ff3e79;
       transition: background-color 0.1s linear;
     }
 
@@ -192,7 +192,7 @@
     @media (min-width: 768px) {
       height: max-content;
       display: grid;
-      background-color: $white-color;
+      background-color: #fff;
       border-radius: 5px;
     }
 
@@ -209,7 +209,7 @@
         margin-right: 16px;
         height: 1px;
         width: 96.5%;
-        background-color: $light-grey-color;
+        background-color: #eaeaea;
       }
     }
   }
@@ -221,9 +221,9 @@
     justify-content: space-between;
     width: 260px;
     height: 200px;
-    background-color: $white-color;
+    background-color: #fff;
     border-radius: 5px;
-    border: 1px solid $light-grey-color;
+    border: 1px solid #eaeaea;
     margin: 0 auto;
     padding: 16px;
     font-size: 14px;
@@ -237,6 +237,7 @@
       background-color: transparent;
       border-radius: 0;
       border: none;
+      /*border-bottom: 1px solid #eaeaea;*/
     }
 
     div:last-child {
@@ -257,7 +258,7 @@
   }
 
   .plates__price-category {
-    color: $grey-color;
+    color: #7e7e82;
   }
 
   .plates__table-header {

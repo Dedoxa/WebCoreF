@@ -209,7 +209,7 @@
         margin-right: 16px;
         height: 1px;
         width: 96.5%;
-        background-color: $light-grey-color;
+        background-color: #eaeaea;
       }
     }
   }
@@ -221,9 +221,9 @@
     justify-content: space-between;
     width: 260px;
     height: 200px;
-    background-color: $white-color;
+    background-color: #fff;
     border-radius: 5px;
-    border: 1px solid $light-grey-color;
+    border: 1px solid #eaeaea;
     margin: 0 auto;
     padding: 16px;
     font-size: 14px;
@@ -237,6 +237,7 @@
       background-color: transparent;
       border-radius: 0;
       border: none;
+      /*border-bottom: 1px solid #eaeaea;*/
     }
 
     div:last-child {
@@ -257,7 +258,7 @@
   }
 
   .plates__price-category {
-    color: $grey-color;
+    color: #7e7e82;
   }
 
   .plates__table-header {

@@ -14,11 +14,9 @@
   font-family: 'TT Lakes Bold', Times, serif;
   font-size: 12px;
   transition: background-color 0.1s linear;
-  transition: opacity linear 0.2s;
-  opacity: 100%;
 
   &:hover {
-    transition: opacity 0.1s linear;
-    opacity: 50%;
+    background-color: #00000014;
+    transition: background-color 0.1s linear;
   }
 }

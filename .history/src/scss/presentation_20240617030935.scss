@@ -181,7 +181,11 @@
     right: 0px;
     width: 24px;
     height: 40px;
-    background: linear-gradient(to right, $fullTtransparency, $white-color);
+    background: linear-gradient(
+      to right,
+      rgba(248, 248, 248, 0),
+      rgba(248, 248, 248, 1)
+    );
 
     @media (min-width: 1440px) {
       display: none;
@@ -221,7 +225,7 @@
 
     p {
       font-size: 14px;
-      color: $parablack-color;
+      color: #1b1c21;
       overflow: hidden;
       font-weight: 500;
 
