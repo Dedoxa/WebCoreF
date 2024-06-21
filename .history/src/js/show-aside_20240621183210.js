@@ -35,14 +35,12 @@ function showAsideMenu(ton, toff, mainAside, blur, ...otherAsides) {
     if (mainAside.classList.contains('jsShow-aside')) {
       mainAside.classList.remove('jsShow-aside')
       blur.classList.remove('jsShow-blur')
-      BODY.classList.remove('jsBlockScroll')
     }
   })
   blur.addEventListener('click', function () {
     if (mainAside.classList.contains('jsShow-aside')) {
       mainAside.classList.remove('jsShow-aside')
       blur.classList.remove('jsShow-blur')
-      BODY.classList.remove('jsBlockScroll')
     }
   })
 }

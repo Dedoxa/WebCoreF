@@ -242,6 +242,7 @@
   transform: translateX(120%);
 
   @media (min-width: 1440px) {
+    position: fixed;
     width: 440px;
   }
 }
