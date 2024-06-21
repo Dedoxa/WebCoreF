@@ -228,11 +228,13 @@
 
 .aside-menu--left {
   position: absolute;
+  display: block;
   transform: translateX(-100%);
 
   @media (min-width: 1440px) {
     transform: translateX(0);
     position: static;
+    display: block;
     box-shadow: none;
   }
 }

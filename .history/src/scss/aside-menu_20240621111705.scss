@@ -228,6 +228,7 @@
 
 .aside-menu--left {
   position: absolute;
+  height: 100vh;
   transform: translateX(-100%);
 
   @media (min-width: 1440px) {
